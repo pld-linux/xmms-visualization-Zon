@@ -5,8 +5,6 @@ Version:	0.04
 Release:	1
 License:	GPL
 Group:		X11/Applications/Multimedia
-Group(de):	X11/Applikationen/Multimedia
-Group(pl):	X11/Aplikacje/Multimedia
 Source0:	http://choronzon.net/Code/Zon/Zon-%{version}.tar.gz
 URL:		http://choronzon.net/Code/Zon/
 Requires:	xmms

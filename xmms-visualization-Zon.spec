@@ -1,5 +1,5 @@
 Summary:	GL && GLUT Visualization Plugin
-Summary(pl):	Plugin Wizualizacji GL && GLU
+Summary(pl):	Wtyczka wizualizacji dla XMMS-a u¿ywaj±ca GL i GLU
 Name:		xmms-visualization-Zon
 Version:	0.04
 Release:	2
@@ -20,7 +20,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Visualization plugin which uses GL && GLUT.
 
 %description -l pl
-Plugin wizualizacji u¿ywaj±cy GL && GLUT.
+Wtyczka wizualizacji dla XMMS-a u¿ywaj±ca GL i GLUT.
 
 %prep
 %setup -q -n Zon-%{version}

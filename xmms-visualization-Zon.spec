@@ -6,6 +6,7 @@ Release:	1
 License:	GPL
 Group:		X11/Applications/Multimedia
 Source0:	http://choronzon.net/Code/Zon/Zon-%{version}.tar.gz
+# Source0-md5:	a09cd9d3dfea64eab451dfdc10eee9eb
 URL:		http://choronzon.net/Code/Zon/
 Requires:	xmms
 BuildRequires:	xmms-devel >= 1.2.3

@@ -30,7 +30,7 @@ Plugin wizualizacji u¿ywaj±cy GL && GLUT.
 
 %build
 %{__make} \
-	CFLAGS="%{?debug:-O0 -g}%{!?debug:$RPM_OPT_FLAGS} \
+	CFLAGS="%{rpmcflags} \
 	`glib-config --cflags` \
 	`%{_bindir}/gtk-config --cflags` \
 	`%{_bindir}/xmms-config --cflags` \
@@ -38,8 +38,8 @@ Plugin wizualizacji u¿ywaj±cy GL && GLUT.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT/`%{_bindir}/xmms-config --visualization-plugin-dir`/
-install -d $RPM_BUILD_ROOT/`%{_bindir}/xmms-config --data-dir`/
+install -d $RPM_BUILD_ROOT/`%{_bindir}/xmms-config --visualization-plugin-dir`/ \
+	$RPM_BUILD_ROOT/`%{_bindir}/xmms-config --data-dir`/
 
 %{__make} install \
 	INSTALL-DIR=$RPM_BUILD_ROOT/`%{_bindir}/xmms-config --visualization-plugin-dir`/ \
